@@ -51,6 +51,15 @@ def Distance_finder(Focal_Length, real_object_width, object_width_in_frame):
 
     distance = (real_object_width * Focal_Length)/object_width_in_frame
     return distance
+def object_detector(image):
+    # getting class names, confindance, bounding boxes for the model. 
+    classes, scores, boxes = model.detect(image, CONFIDENCE_THRESHOLD, NMS_THRESHOLD)
+    DataList =[]
+    # getting the chassid , confidence and bounding box for each indivdual object
+    for (classid, score, box) in zip (classes, scores, boxes):
+        color = COLORS[int(classid)% len(COLORS)]
+        label = "%s : %f" %(class_names[classid])
+
 
 cap = cv.VideoCapture(1)
 
