@@ -11,7 +11,9 @@ CONFIDENCE_THRESHOLD = 0.4
 NMS_THRESHOLD = 0.3
 
 # colors for object detected
-COLORS = [(0, 255, 255), (255, 255, 0), (0, 255, 0), (255, 0, 0)]
+COLORS = [(255,0,0),(255,0,255),(0, 255, 255), (255, 255, 0), (0, 255, 0), (255, 0, 0)]
+GREEN =(0,0,0)
+BLACK =(0,255,0)
 
 FONTS = cv.FONT_HERSHEY_COMPLEX
 class_names = []
@@ -27,26 +29,9 @@ model = cv.dnn_DetectionModel(yoloNet)
 model.setInputParams(size=(416, 416), scale=1/255, swapRB=True)
 
 
-# focal length finder function 
-def FocalLength(measured_distance, real_width, width_in_rf_image):
-
-    focal_length = (width_in_rf_image * measured_distance) / real_width
-    return focal_length
-
-# distance estimation function
-def Distance_finder(Focal_Length, real_object_width, object_width_in_frame):
-
-    distance = (real_object_width * Focal_Length)/object_width_in_frame
-    return distance
-
-
-
-
 cap = cv.VideoCapture(3)
-
 while True:
     ret, frame = cap.read()
-    object_detector(frame)
     cv.imshow('frame',frame)
     
     key = cv.waitKey(1)
