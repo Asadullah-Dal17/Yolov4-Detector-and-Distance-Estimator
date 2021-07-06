@@ -14,8 +14,10 @@ NMS_THRESHOLD = 0.3
 COLORS = [(255,0,0),(255,0,255),(0, 255, 255), (255, 255, 0), (0, 255, 0), (255, 0, 0)]
 GREEN =(0,0,0)
 BLACK =(0,255,0)
-
+# defining fonts 
 FONTS = cv.FONT_HERSHEY_COMPLEX
+
+# getting class names from classes.txt file 
 class_names = []
 with open("classes.txt", "r") as f:
     class_names = [cname.strip() for cname in f.readlines()]
@@ -27,7 +29,6 @@ yoloNet.setPreferableTarget(cv.dnn.DNN_TARGET_CUDA_FP16)
 
 model = cv.dnn_DetectionModel(yoloNet)
 model.setInputParams(size=(416, 416), scale=1/255, swapRB=True)
-
 
 cap = cv.VideoCapture(3)
 while True:
