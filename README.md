@@ -2,6 +2,12 @@
 
 *Find distance from object to camera using YoloV4 object detector, here we will be using single camera :camera:, detailed explanation of distance estimation is available another repository* [**Face detection and Distance Estimation using single camera**](https://github.com/Asadullah-Dal17/Distance_measurement_using_single_camera)
 
+
+
+https://user-images.githubusercontent.com/66181793/124917186-f5066b00-e00c-11eb-93cf-24d84e9c2e7a.mp4
+
+
+
 ### [Video Tutorial Explains the concept and implementation ](https://youtu.be/FcRCwTgYXJw)
 
 - Here we are targeting the person and cell phone classes only, for demo purpose.
