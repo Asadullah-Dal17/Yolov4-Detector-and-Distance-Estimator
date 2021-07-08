@@ -8,11 +8,11 @@ https://user-images.githubusercontent.com/66181793/124917186-f5066b00-e00c-11eb-
 
 
 
-### [Video Tutorial Explains the concept and implementation ](https://youtu.be/FcRCwTgYXJw)
+ [**Video Tutorial Explains the concept and implementation** ](https://youtu.be/FcRCwTgYXJw) ![YouTube Video Views](https://img.shields.io/youtube/views/FcRCwTgYXJw?style=social)
 
 - Here we are targeting the person and cell phone classes only, for demo purpose.
 
-- you can follow all the steps mentioned in the video to create for other objects as well. (not-published yet)
+- you can follow all the steps mentioned in the video to create for other objects as well. 
 
 implementation detail available on [_**Darknet**_](https://github.com/pjreddie/darknet)
 
@@ -40,7 +40,7 @@ I have use tiny weights, check out more on darknet github for more
 
 I have ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCc8Lx22a5OX4XMxrCykzjbA?style=social), If you can increase that counter, go a head do this for me 😃, just kidding as always ;-)  [AiPhle](https://youtube.come/c/aiphle) is all about Computer Vision, AI and Electronics.
 
-hope you found this helpful,  if you want to ask me any thing then.
+hope you found this helpful,  if you want to ask me any thing then here are my social medias. 
 
 ## :green_heart: Join Me on Social Media :green_heart:
 
