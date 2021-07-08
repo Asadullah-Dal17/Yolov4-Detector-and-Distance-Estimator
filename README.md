@@ -41,3 +41,15 @@ I have use tiny weights, check out more on darknet github for more
 I have ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCc8Lx22a5OX4XMxrCykzjbA?style=social), If you can increase that counter, go a head do this for me 😃, just kidding as always ;-)  [AiPhle](https://youtube.come/c/aiphle) is all about Computer Vision, AI and Electronics.
 
 hope you found this helpful,  if you want to ask me any thing then.
+
+## :green_heart: Join Me on Social Media :green_heart:
+
+<a href="https://www.youtube.com/c/aiphile"> <img alt="AiPhile Youtube" src="icons/youtub-icon.svg"  width="60" height="60">
+</a>
+<a href="https://www.facebook.com/AIPhile17">
+<img alt="AiPhile Facebook" src="icons/facebook-icon.svg"  width="60" height="60">
+</a>
+<a href="https://www.instagram.com/aiphile17/"> <img alt="AiPhile Insta" src="icons/instagram-icon.svg"  width="60" height="60">
+</a>
+<a href="https://github.com/Asadullah-Dal17"> <img alt="Github" src="icons/github-icon.svg"  width="60" height="60">
+</a>
