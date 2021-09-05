@@ -80,7 +80,7 @@ print(f"Person width in pixels : {person_width_in_rf} mobile width in pixel: {mo
 focal_person = focal_length_finder(KNOWN_DISTANCE, PERSON_WIDTH, person_width_in_rf)
 
 focal_mobile = focal_length_finder(KNOWN_DISTANCE, MOBILE_WIDTH, mobile_width_in_rf)
-cap = cv.VideoCapture(3)
+cap = cv.VideoCapture(0)
 while True:
     ret, frame = cap.read()
 
