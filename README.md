@@ -37,19 +37,18 @@ implementation detail available on [_**Darknet**_](https://github.com/pjreddie/d
 then just clone this repository and you are good to go.
 
 I have use tiny weights, check out more on darknet github for more
+---
 
-I have ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCc8Lx22a5OX4XMxrCykzjbA?style=social), If you can increase that counter, go a head do this for me 😃, just kidding as always ;-)  [AiPhle](https://youtube.come/c/aiphle) is all about Computer Vision, AI and Electronics.
+if You found this Helpful, please star :star: it.
 
-hope you found this helpful,  if you want to ask me any thing then here are my social medias. 
+You can Watch my Video Tutorial on Computer Vision Topics, just check out my YouTube Channel <a href="https://www.youtube.com/c/aiphile">  <img alt="AiPhile Youtube" src="https://user-images.githubusercontent.com/66181793/131223988-882d53a0-4882-468f-9bd7-46b46466baae.png"  width="20"> </a>
 
-## :green_heart: Join Me on Social Media :green_heart:
 
-<a href="https://www.youtube.com/c/aiphile"> <img alt="AiPhile Youtube" src="icons/youtub-icon.svg"  width="60" height="60">
-</a>
-<a href="https://www.facebook.com/AIPhile17">
-<img alt="AiPhile Facebook" src="icons/facebook-icon.svg"  width="60" height="60">
-</a>
-<a href="https://www.instagram.com/aiphile17/"> <img alt="AiPhile Insta" src="icons/instagram-icon.svg"  width="60" height="60">
-</a>
-<a href="https://github.com/Asadullah-Dal17"> <img alt="Github" src="icons/github-icon.svg"  width="60" height="60">
-</a>
+If You have any Question or need help in CV Project, Feel free to DM on Instagram  <a href="https://www.instagram.com/aiphile17/">  <img alt="Instagram" src="https://user-images.githubusercontent.com/66181793/131223931-32d84c10-88b4-4cd6-8eb8-89f06c3b5b51.png"  width="20"> </a>
+
+## 💚Join me on Social Media :green_heart 🖤 
+
+<h4><a href="https://www.youtube.com/c/aiphile"> YouTube <img alt="AiPhile Youtube" src="https://user-images.githubusercontent.com/66181793/131223988-882d53a0-4882-468f-9bd7-46b46466baae.png"  width="35"> </a> 
+ <a href="https://github.com/Asadullah-Dal17">  GitHub  <img alt="GitHub" src="https://user-images.githubusercontent.com/66181793/131223930-9fd2bfc7-9c43-465d-a057-55f3292f3b2b.png"  width="35"> </a> 
+  <a href="https://www.instagram.com/aiphile17/">   Instagram <img alt="Instagram" src="https://user-images.githubusercontent.com/66181793/131223931-32d84c10-88b4-4cd6-8eb8-89f06c3b5b51.png"  width="35"> </a> </h4>
+
