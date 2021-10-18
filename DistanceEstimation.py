@@ -51,7 +51,8 @@ def object_detector(image):
             data_list.append([class_names[classid[0]], box[2], (box[0], box[1]-2)])
         elif classid ==67:
             data_list.append([class_names[classid[0]], box[2], (box[0], box[1]-2)])
-        # return list 
+        # if you want inclulde more classes then you have to simply add more [elif] statements here
+        # returning list containing the object data. 
     return data_list
 
 def focal_length_finder (measured_distance, real_width, width_in_rf):
