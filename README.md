@@ -16,6 +16,7 @@ https://user-images.githubusercontent.com/66181793/124917186-f5066b00-e00c-11eb-
 
 implementation detail available on [_**Darknet**_](https://github.com/pjreddie/darknet)
 
+
 ---
 
 ## TO DO
@@ -44,6 +45,30 @@ I have use tiny weights, check out more on darknet github for more
 
 ---
 
+## Add more Classes(Objects) for Distance Estimation
+
+You will make changes on these particular lines [***DistanceEstimation.py***](https://github.com/Asadullah-Dal17/Yolov4-Detector-and-Distance-Estimator/blob/master/DistanceEstimation.py#L50-L56)
+```python
+if classid ==0: # person class id 
+    data_list.append([class_names[classid[0]], box[2], (box[0], box[1]-2)])
+elif classid ==67: # cell phone
+    data_list.append([class_names[classid[0]], box[2], (box[0], box[1]-2)])
+    
+    # adding more classes for distnaces estimation 
+
+elif classid ==2: # car
+    data_list.append([class_names[classid[0]], box[2], (box[0], box[1]-2)])
+
+elif classid ==15: # cat
+    data_list.append([class_names[classid[0]], box[2], (box[0], box[1]-2)])
+# in that way you can include as many classes you want 
+
+    # returning list containing the object data. 
+return data_list
+
+```
+
+---
 if You found this Helpful, please star :star: it.
 
 You can Watch my Video Tutorial on Computer Vision Topics, just check out my YouTube Channel <a href="https://www.youtube.com/c/aiphile">  <img alt="AiPhile Youtube" src="https://user-images.githubusercontent.com/66181793/131223988-882d53a0-4882-468f-9bd7-46b46466baae.png"  width="20"> </a>
