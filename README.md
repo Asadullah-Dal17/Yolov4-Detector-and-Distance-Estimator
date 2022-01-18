@@ -30,13 +30,13 @@ implementation detail available on [_**Darknet**_](https://github.com/pjreddie/d
 ### **windows**
 
 ```pip
-pip install opencv-contrib-python
+pip install opencv-contrib-python==4.5.3.56
 ```
 
 ### **Linux or Mac**
 
 ```pip
-pip3 install opencv-contrib-python
+pip3 install opencv-contrib-python==4.5.3.56
 ```
 
 then just clone this repository and you are good to go.
