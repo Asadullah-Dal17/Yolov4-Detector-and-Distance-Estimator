@@ -1,5 +1,9 @@
-import cv2 as cv 
+import cv2 as cv
+from joblib import Parallel 
 import numpy as np
+import threading
+import pyttsx3
+engine = pyttsx3.init()
 
 # Distance constants 
 KNOWN_DISTANCE = 45 #INCHES
@@ -29,6 +33,11 @@ yoloNet.setPreferableTarget(cv.dnn.DNN_TARGET_CUDA_FP16)
 
 model = cv.dnn_DetectionModel(yoloNet)
 model.setInputParams(size=(416, 416), scale=1/255, swapRB=True)
+
+def sound():
+    engine.say("Person detected")
+    engine.runAndWait()
+    return 0
 
 # object detector funciton /method
 def object_detector(image):
@@ -89,6 +98,17 @@ while True:
     for d in data:
         if d[0] =='person':
             distance = distance_finder(focal_person, PERSON_WIDTH, d[1])
+
+            # ----- My code implementation ------------
+            # Here usually when the speaker system is implemeted,
+            # the frame loop will freeze everytime the sound plays.
+            # To solve this problem I have used multi threading,
+            # which can run two threads in parallel.
+
+            soundThread = threading.Thread(target = sound)
+            soundThread.start()
+
+
             x, y = d[2]
         elif d[0] =='cell phone':
             distance = distance_finder (focal_mobile, MOBILE_WIDTH, d[1])
