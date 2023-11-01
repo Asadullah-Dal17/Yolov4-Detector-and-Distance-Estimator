@@ -1,6 +1,6 @@
 # Yolov4-Detector-and-Distance-Estimator
 
-*Find distance from object to camera using YoloV4 object detector, here we will be using single camera :camera:, detailed explanation of distance estimation is available another repository* [**Face detection and Distance Estimation using single camera**](https://github.com/Asadullah-Dal17/Distance_measurement_using_single_camera)
+*Find the distance from the object to the camera using the YoloV4 object detector, here we will be using a single camera :camera:, detailed explanation of distance estimation is available in another repository* [**Face detection and Distance Estimation using single camera**](https://github.com/Asadullah-Dal17/Distance_measurement_using_single_camera)
 
 
 
@@ -10,9 +10,9 @@ https://user-images.githubusercontent.com/66181793/124917186-f5066b00-e00c-11eb-
 
  [**Video Tutorial Explains the concept and implementation** ](https://youtu.be/FcRCwTgYXJw) ![YouTube Video Views](https://img.shields.io/youtube/views/FcRCwTgYXJw?style=social)
 
-- Here we are targeting the person and cell phone classes only, for demo purpose.
+- Here we are targeting the person and cell phone classes only, for demo purposes.
 
-- you can follow all the steps mentioned in the video to create for other objects as well. 
+- you can follow all the steps mentioned in the video to create other objects as well. 
 
 implementation detail available on [_**Darknet**_](https://github.com/pjreddie/darknet)
 
@@ -21,7 +21,7 @@ implementation detail available on [_**Darknet**_](https://github.com/pjreddie/d
 
 ## TO DO
 
-- [x] Finding distance of mutiple object at same time.
+- [x] Finding the distance of multiple objects at the same time.
 
 ## Installation you need opencv-contrib-python
 
@@ -41,7 +41,7 @@ pip3 install opencv-contrib-python==4.5.3.56
 
 then just clone this repository and you are good to go.
 
-I have use tiny weights, check out more on darknet github for more
+I have used tiny weights, check out more on darknet GitHub for more
 
 ---
 
@@ -54,14 +54,14 @@ if classid ==0: # person class id
 elif classid ==67: # cell phone
     data_list.append([class_names[classid[0]], box[2], (box[0], box[1]-2)])
     
-# adding more classes for distnaces estimation 
+# Adding more classes for distance estimation 
 
 elif classid ==2: # car
     data_list.append([class_names[classid[0]], box[2], (box[0], box[1]-2)])
 
 elif classid ==15: # cat
     data_list.append([class_names[classid[0]], box[2], (box[0], box[1]-2)])
-# in that way you can include as many classes you want 
+# In that way you can include as many classes as you want 
 
     # returning list containing the object data. 
 return data_list
@@ -71,18 +71,18 @@ return data_list
 ## Reading images and getting focal length
 
 You have to make changes on these lines 📝 [***DistanceEstimation.py***](https://github.com/Asadullah-Dal17/Yolov4-Detector-and-Distance-Estimator/blob/master/DistanceEstimation.py#L69-L76)
-there two situations, if the object(classes) in single image then, here you can see the my reference image <img src='ReferenceImages/image4.png' width=200> 
+there are two situations, if the object(classes) in the single image then, here you can see my reference image <img src='ReferenceImages/image4.png' width=200> 
 it has to two object, *person* and *cell phone*
 ```python
-# reading refrence images 
+# reading reference images 
 ref_person = cv.imread('ReferenceImages/image14.png')
 ref_mobile = cv.imread('ReferenceImages/image4.png')
-# calling the object detector function to get the width or height of object
+# calling the object detector function to get the width or height of the object
 # getting pixel width for person
 person_data = object_detector(ref_person)
 person_width_in_rf = person_data[0][1]
 
-# getting pixel width for cell phone
+# Getting pixel width for cell phone
 mobile_data = object_detector(ref_mobile)
 mobile_width_in_rf = mobile_data[1][1]
 
@@ -90,7 +90,7 @@ mobile_width_in_rf = mobile_data[1][1]
 cat_data = object_detector(ref_person)
 cat_width_in_rf = person_data[2][1]
 
-# getting pixel width for car
+# Getting pixel width for car
 car_data = object_detector(ref_person)
 car_width_in_rf = person_data[3][1]
 
@@ -103,12 +103,12 @@ ref_car = cv.imread('ReferenceImages/car_ref_img.png.png')
 ref_cat = cv.imread('ReferenceImages/cat_ref_img.png')
 ref_mobile = cv.imread('ReferenceImages/ref_cell_phone.png')
 
-# checking object detection on reference image 
+# Checking object detection on the reference image 
 # getting pixel width for person
 person_data = object_detector(ref_person)
 person_width_in_rf = person_data[0][1]
 
-# getting pixel width for cell phone
+# Getting pixel width for cell phone
 mobile_data = object_detector(ref_mobile)
 mobile_width_in_rf = mobile_data[0][1]
 
@@ -116,10 +116,10 @@ mobile_width_in_rf = mobile_data[0][1]
 cat_data = object_detector(ref_cat)
 cat_width_in_rf = person_data[0][1]
 
-# getting pixel width for car
+# Getting pixel width for car
 car_data = object_detector(ref_car)
 car_width_in_rf = person_data[0][1]
-# then you find Focal length for each
+# Then you find the Focal length for each
 
 ```
 If you have any doubt DM me on insta   <a href="https://www.instagram.com/aiphile17/"> <img alt="Instagram" src="https://user-images.githubusercontent.com/66181793/131223931-32d84c10-88b4-4cd6-8eb8-89f06c3b5b51.png"  width="20"> </a> </h4>
@@ -134,8 +134,39 @@ I am avalaible for paid work here <a href="https://www.fiverr.com/aiphile"> Five
 
 ## 💚🖤 Join me on Social Media 🖤💚 
 
-<h4><a href="https://www.youtube.com/c/aiphile"> YouTube  <img alt="AiPhile Youtube" src="https://user-images.githubusercontent.com/66181793/131223988-882d53a0-4882-468f-9bd7-46b46466baae.png"  width="35"> </a> 
- <a href="https://github.com/Asadullah-Dal17">  GitHub   <img alt="GitHub" src="https://user-images.githubusercontent.com/66181793/131223930-9fd2bfc7-9c43-465d-a057-55f3292f3b2b.png"  width="35"> </a> 
-  <a href="https://medium.com/@asadullah92c">  Medium   <img alt="Medium" src="https://user-images.githubusercontent.com/66181793/146642235-bde4be12-603d-4eed-bd44-5b28829e17b3.png"  width="35"> </a> 
- <a href="https://www.fiverr.com/aiphile">   Fiverr <img alt="Fiverr" src="https://user-images.githubusercontent.com/66181793/163767548-9a68e1c1-341a-4b07-9e35-042c35694c08.png"  width="35"> </a> 
-  <a href="https://www.instagram.com/aiphile17/">   Instagram <img alt="Instagram" src="https://user-images.githubusercontent.com/66181793/131223931-32d84c10-88b4-4cd6-8eb8-89f06c3b5b51.png"  width="35"> </a> 
+ 
+   <div id="badges">
+
+ <!-- Youtube Badge -->
+  <a href="https://www.youtube.com/c/aiphile">
+    <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
+  </a>
+
+<!-- Fiverr Badge -->
+   <a href="https://www.fiverr.com/asadullah_ar">
+    <img src="https://img.shields.io/badge/Fiverr-fiverr?style=for-the-badge&logo=Fiverr&logoColor=black" alt="Fiverr Badge"/>
+  </a> 
+<!-- Instagram Badge  -->
+  <a href="https://www.instagram.com/aiphile17">
+    <img src="https://img.shields.io/badge/Instagram-purple?style=for-the-badge&logo=Instagram&logoColor=white" alt="Medium Badge"/>
+
+<!-- Medium Badge  -->
+  <a href="https://medium.com/@aiphile">
+    <img src="https://img.shields.io/badge/Medium-black?style=for-the-badge&logo=Medium&logoColor=white" alt="Medium Badge"/>
+  </a>
+
+<!-- LinkedIn Badge -->
+  <a href="https://www.linkedin.com/company/aiphile">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <!-- Face book badge  -->
+<a href="https://asadullah.super.site">
+    <img src="https://img.shields.io/badge/My%20Profile-black?style=for-the-badge&logo=Profile&logoColor=Green" alt="Facebook Badge"/>
+  </a> 
+  <!-- Twitter Badge  -->
+  <a href="https://twitter.com/ai_phile">
+    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
+  </a>
+  
+ 
+</div>
