@@ -39,7 +39,7 @@ def object_detector(image):
         # define color of each, object based on its class id 
         color= COLORS[int(classid) % len(COLORS)]
     
-        label = "%s : %f" % (class_names[classid[0]], score)
+        label = "%s : %f" % (class_names[classid], score)
 
         # draw rectangle on and label on object
         cv.rectangle(image, box, color, 2)
@@ -48,9 +48,9 @@ def object_detector(image):
         # getting the data 
         # 1: class name  2: object width in pixels, 3: position where have to draw text(distance)
         if classid ==0: # person class id 
-            data_list.append([class_names[classid[0]], box[2], (box[0], box[1]-2)])
+            data_list.append([class_names[classid], box[2], (box[0], box[1]-2)])
         elif classid ==67:
-            data_list.append([class_names[classid[0]], box[2], (box[0], box[1]-2)])
+            data_list.append([class_names[classid], box[2], (box[0], box[1]-2)])
         # if you want inclulde more classes then you have to simply add more [elif] statements here
         # returning list containing the object data. 
     return data_list
