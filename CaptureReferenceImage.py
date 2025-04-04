@@ -33,7 +33,7 @@ def ObjectDetector(image):
 
     for (classid, score, box) in zip(classes, scores, boxes):
         color = COLORS[int(classid) % len(COLORS)]
-        label = "%s : %f" % (class_names[classid[0]], score)
+        label = "%s : %f" % (class_names[classid], score)
         cv.rectangle(image, box, color, 2)
         cv.putText(frame, label, (box[0], box[1]-10), fonts, 0.5, color, 2)
 
